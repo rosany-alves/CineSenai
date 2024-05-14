@@ -6,7 +6,7 @@
 body{
     
     font-family: 'Roboto Mono', monospace;
-    /*background-image: url(../img/background.jpg);*/
+    background-image: url(../img/background.jpg);
     background-size: 100%;
 }
 
@@ -28,11 +28,13 @@ body{
     margin: auto;
     font-size: 1.5rem;
     font-weight: bold;
+    
 }
 
 #formulario p{
     margin: 10px;
     padding: 5px;
+    background-color: white;
 }
 
 #quantidade-ingresso-inteira, #quantidade-ingresso-meia, #filmes, #horarios{
@@ -68,7 +70,7 @@ body{
     text-align: center;
     border-radius: 15px;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1rem;
     border: 5px solid white;
     vertical-align: middle;
 }
@@ -88,13 +90,14 @@ body{
     margin: 10px;
     justify-content: space-around;
     border: 2px solid rgb(53, 52, 52);
-    border-radius: 8px;
+    border-radius: 10px;
     color: rgb(4, 13, 118);
     vertical-align: middle;
 }
 
 #input-submit{
-    margin: 20px 0;
+    margin: 50px;
+    display: flex;
     font-size: 2rem;
     padding: 5px 10px;
 }
@@ -132,4 +135,3 @@ input[type=checkbox]:checked:before {
     background-color:Green;
     font-size: 15px;
 }
-

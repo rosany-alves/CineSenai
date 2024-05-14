@@ -17,19 +17,24 @@
     <header>
         <div class="container">
             <h1>CineSenai</h1>
-        </div>
-    </header>
-    <div class="container">
-        <h1>Comprar Ingresso</h1>
+                <nav>
+                <ul>
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                    </ul>
+        </nav>
     </div>
+    </header>
+    <h2 id="compra" class="container prod">Compra de ingressos</h2>
     <form id="form">
         <section id="formulario">
             <p>Escolha o filme:
                 <select name="filmes" id="filmes">
                     <option>Filmes</option>
                     <option value="1">Planeta dos Macacos</option>
-                    <option value="2">Adão Negro</option>
-                    <option value="3">witches</option>
+                    <option value="2">Guerra Civil</option>
+                    <option value="3">Garfield</option>
                     <option value="4">Guerra Civil</option>
                     <option value="5">O Dublê</option>
                     <option value="6">Rivais</option>
@@ -46,8 +51,9 @@
                     <option value="5">21:00</option>
                 </select>
             </p>
-            <p>Quantidade Ingressos de entrada inteira: <input type="text" placeholder="Digite a quantidade" name="quantidade-ingresso-inteira" id="quantidade-ingresso-inteira"></p>
-            <p>Quantidade Ingressos de meia entrada: <input type="text" placeholder="Digite a quantidade" name="quantidade-ingresso-meia" id="quantidade-ingresso-meia"></p>
+            
+            <p>Quantidade Ingressos de entrada inteira: <input type="text" name="quantidade-ingresso-inteira" id="quantidade-ingresso-inteira"></p>
+            <p>Quantidade Ingressos de meia entrada: <input type="text" name="quantidade-ingresso-meia" id="quantidade-ingresso-meia"></p>
             <p>Assentos disponíveis:</p>
         </section> 
         <section id="assentos">
@@ -80,11 +86,13 @@
         </section>
         
         <input type="submit" id="input-submit" value="Imprimir ingresso">
-    </form>
+    
 
     <p id="resultado" class="resultado-vazio"></p>
 
 </section>
+<script src="../lib/index.js"></script>
+    
     <footer class="border-top text-muted">
         <div class="container">
           <div class="row py-3">
@@ -100,6 +108,6 @@
           </div>
         </div>
     </footer>
-    <script src="../lib/index.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
