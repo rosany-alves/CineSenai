@@ -88,9 +88,9 @@ body{
 .label-assento{
     display: flex;
     margin: 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border: 2px solid rgb(53, 52, 52);
-    border-radius: 10px;
+    border-radius: 30px;
     color: rgb(4, 13, 118);
     vertical-align: middle;
 }
@@ -100,6 +100,7 @@ body{
     display: flex;
     font-size: 2rem;
     padding: 5px 10px;
+    
 }
 
 .resultado-vazio{

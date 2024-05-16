@@ -16,28 +16,26 @@
     <header>
         <div class="container">
             <h1>CineSenai</h1>
-                <nav>
+            <nav>
                 <ul>
-                        <li>
-                            <a href="#compra">Ingressos</a>
-                        </li>
-                    </ul>
-        </nav>
-    </div>
+                    <li>
+                        <a href="pages/ingresso.html" class="btn btn-primary">Ingressos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <div id="carro" class="container">
         <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div data-bs-interval="3000" class="carousel-item active">
                     <img class="d-block w-100" src="img/banner/img1.png" />
-                    <div class="carousel-caption">
-                        
+                    <div class="carousel-caption">     
                     </div>
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
                     <img class=" d-block w-100" src="img/banner/img2.png">
                     <div class="carousel-caption">
-                        
                     </div>
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
@@ -96,48 +94,96 @@
             <h3>Sala 1</h3>
         <img src="img/cine/planeta-dos-macacos-o-reinado.jpg" alt="Cine1">
         <p>QUI | SEX | TER: 22h <br> SÁB |DOM | SEG: 20h</p>
+        <section id="catalogo">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#produtoCine1">
+              VER MAIS...
+            </button>
+            <br></br>
+        </section>
         <a href="pages/ingresso.html">
-            <button>Comprar ingresso</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produtoCine1">
+                Comprar Ingresso
+            </button>
         </a>
         </div>
         <div class="produto">
             <h3>Sala 2</h3>
         <img src="img/cine/jhon-wick.png" alt="Cine2">
         <p>QUI | SEX | TER: 22h <br> SÁB |DOM | SEG: 20h</p>
+        <section id="catalogo">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#produtoCine2">
+              VER MAIS...
+            </button>
+            <br></br>
+        </section>
         <a href="pages/ingresso.html">
-            <button>Comprar ingresso</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produtoCine2">
+                Comprar Ingresso
+            </button>
         </a>
         </div>
         <div class="produto">
             <h3>Sala 3</h3>
         <img src="img/cine/adao-negro.png" alt="Cine3">
         <p>QUI | SEX | TER: 22h <br> SÁB |DOM | SEG: 20h</p>
+        <section id="catalogo">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#produtoCine3">
+              VER MAIS...
+            </button>
+            <br></br>
+        </section>
         <a href="pages/ingresso.html">
-            <button>Comprar ingresso</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produtoCine3">
+                Comprar Ingresso
+            </button>
         </a>
         </div>
         <div class="produto">
             <h3>Sala 4</h3>
         <img src="img/cine/witches.png" alt="Cine4">
         <p>QUI | SEX | TER: 22h <br> SÁB |DOM | SEG: 20h</p>
+        <section id="catalogo">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#produtoCine4">
+              VER MAIS...
+            </button>
+            <br></br>
+        </section>
         <a href="pages/ingresso.html">
-            <button>Comprar ingresso</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produtoCine4">
+                Comprar Ingresso
+            </button>
         </a>
         </div>
         <div class="produto">
             <h3>Sala 5</h3>
         <img src="img/cine/the-fall.png" alt="Cine5">
         <p>QUI | SEX | TER: 22h <br> SÁB |DOM | SEG: 20h</p>
+        <section id="catalogo">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#produtoCine5">
+              VER MAIS...
+            </button>
+            <br></br>
+        </section>
         <a href="pages/ingresso.html">
-            <button>Comprar ingresso</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produtoCine5">
+                Comprar Ingresso
+            </button>
         </a>
         </div>
         <div class="produto">
             <h3>Sala 6</h3>
         <img src="img/cine/deadpool.png" alt="Cine6">
         <p>QUI | SEX | TER: 22h <br> SÁB |DOM | SEG: 20h</p>
+        <section id="catalogo">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#produtoCine6">
+              VER MAIS...
+            </button>
+            <br></br>
+        </section>
         <a href="pages/ingresso.html">
-            <button>Comprar ingresso</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produtoCine6">
+                Comprar Ingresso
+            </button>
         </a>
         </div>
     </section>
@@ -156,6 +202,138 @@
           </div>
         </div>
     </footer>
+    <div id="modais">
+        <!--modal planeta dos macacos-->
+        <div class="modal fade" id="produtoCine1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">PLANETA DOS MACACOS - O REINADO</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img class="w-100" src="img/cine/planeta-dos-macacos-o-reinado.jpg" alt="cine1">
+                  <p>Planeta dos Macacos: O Reinado é do mesmo diretor do sucesso Maze Runner: Correr ou Morrer (2014). Desde o reinado de César, quando os primatas conquistaram a paz, muitos anos se passaram e tudo parecia calmo. Até o momento em que um jovem e curioso chimpanzé mergulha em uma jornada reveladora, que irá revolucionar tudo o que foi aprendido. É quando chegará o momento das escolhas que irão definir o futuro dos macacos e da humanidade, até então relegada a uma vida isolada e selvagem. Dos mesmos roteiristas dos anteriores e campeões de bilheteria Planeta dos Macacos: A Origem (2011), Planeta dos Macacos: O Confronto (2014) e Planeta dos Macacos: A Guerra (2017).</p>
+                  <h4 class="text-success">Não recomendado para menos de 14 anos</h4>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--fim planeta dos macaco-->
+        <!--modal jhon wick-->
+        <div class="modal fade" id="produtoCine2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">John Wick 4: Baba Yaga</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="w-100" src="img/cine/jhon-wick.png" alt="cine2">
+                <p>O assassino profissional retorna às telas para John Wick 4: Baba Yaga. O assassino profissional John Wick (Keanu Reeves) agora virou metade do submundo contra ele com sua vingança, que agora está entrando em sua quarta rodada em Nova York, Berlim, Paris e Osaka. Sua equipe, composta por Bowery King (Laurence Fishburne), o gerente do hotel Winston (Ian McShane) e o concierge Charon (Lance Reddick) do lendário hotel assassino Continental, novamente fazem parte da festa.</p>
+                <h4 class="text-success">Não recomendado para menos de 14 anos</h4>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--fim modal jhon wick-->
+      <!--modal adão negro-->
+      <div class="modal fade" id="produtoCine3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Adão Negro 2024</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" src="img/cine/adao-negro.png" alt="cine3">
+              <p>Adão Negro é o filme solo do anti-herói, baseado no personagem em quadrinhos Black Adam (Dwayne Johnson) da DC Comics, grande antagonista de Shazam!, tendo no longa, sua história de origem explorada, e revelando seu passado de escravo no país Kahndaq. Nascido no Egito Antigo, o anti-herói tem super força, velocidade, resistência, capacidade de voar e de disparar raios. Alter ego de Teth-Adam e filho do faraó Ramsés II, Adão Negro foi consumido por poderes mágicos e transformado em um feiticeiro. Grande inimigo de Shazam! nas HQs, apesar dele acreditar em seu pontecial e, inclusive, oferecê-lo como um guerreiro do bem, Adão Negro acaba usando suas habilidades especiais para o mal. O anti-herói em busca de redenção ou um herói que se tornou vilão, pode ser capaz de destruir tudo o que estiver pela frente - ou de encontrar seu caminho.</p>
+              <h4 class="text-success">Não recomendado para menos de 12 anos</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--fim modal adão negro-->
+    <!--modal witches-->
+    <div class="modal fade" id="produtoCine4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Convenção das Bruxas</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" src="img/cine/witches.png" alt="cine4">
+              <p>Em 1967, um jovem órfão vai morar com sua adorável avó na cidade de Demopolis, no interior do estado do Alabama. Lá, o garoto e sua avó se deparam com glamorosas, porém diabólicas bruxas, e ela decide fugir, levando o menino para um resort costeiro. Porém, ao chegarem lá, eles descobrem que uma grande reunião, com bruxas de todo o mundo, está acontecendo no local, e elas planejam transformar todas as crianças do mundo em ratos.</p>
+              <h4 class="text-success">Não recomendado para menos de 12 anos</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--fim modal witches-->
+    <!--modal the fall-->
+    <div class="modal fade" id="produtoCine5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">O Dublê</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" src="img/cine/the-fall.png" alt="cine5">
+              <p>O Dublê é um filme de ação e comédia dirigido por David Leitch (Trem-Bala, Deadpool 2) e baseado na série Duro na Queda, sucesso dos anos 80. A história acompanha Colt Seavers (Ryan Gosling), um dublê de Hollywood que precisou abandonar a vida de acrobacias perigosas após sofrer um acidente que quase acabou com a vida e a carreira dele.</p>
+              <h4 class="text-success">Não recomendado para menos de 12 anos</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--fim modal the fall-->
+    <!--modal deadpool-->
+    <div class="modal fade" id="produtoCine6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Deadpool 3</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" src="img/cine/deadpool.png" alt="cine6">Deadpool & Wolverine reúne o icônico mercenário tagarela Wade Wilson (Ryan Reynolds) e o poderoso mutante Wolverine (Hugh Jackman) em uma aventura explosiva, escrita e produzida pelos mesmos talentos por trás de Deadpool (2016) e Deadpool 2 (2018). Wade Wilson desfruta de um momento de aparente calma ao lado de Vanessa (Morena Baccarin) e seus amigos e, em contra partida, Wolverine se recupera de seus ferimentos. Um têm os seus caminhos cruzados com o outro, dando início a uma improvável aliança. Juntos, eles enfrentam um inimigo formidável em comum, desencadeando uma jornada repleta de ação, humor e reviravoltas surpreendentes. Deadpool & Wolverine promete ser uma aventura épica, cheia de referências aos quadrinhos e momentos de pura adrenalina, proporcionando aos fãs uma experiência única e inesquecível no universo dos super-heróis.Adão Negro é o filme solo do anti-herói, baseado no personagem em quadrinhos Black Adam (Dwayne Johnson) da DC Comics, grande antagonista de Shazam!, tendo no longa, sua história de origem explorada, e revelando seu passado de escravo no país Kahndaq. Nascido no Egito Antigo, o anti-herói tem super força, velocidade, resistência, capacidade de voar e de disparar raios. Alter ego de Teth-Adam e filho do faraó Ramsés II, Adão Negro foi consumido por poderes mágicos e transformado em um feiticeiro. Grande inimigo de Shazam! nas HQs, apesar dele acreditar em seu pontecial e, inclusive, oferecê-lo como um guerreiro do bem, Adão Negro acaba usando suas habilidades especiais para o mal. O anti-herói em busca de redenção ou um herói que se tornou vilão, pode ser capaz de destruir tudo o que estiver pela frente - ou de encontrar seu caminho.</p>
+              <h4 class="text-success">Não recomendado para menos de 12 anos</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--fim modal deadpool-->
     <script src="lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
